@@ -1,0 +1,45 @@
+export function Content() {
+    return (
+        <div className="primary">
+            <div className="profile">
+                <aside className="card-profile">
+                    <img src="/perfil-exemplo.png" alt="Foto do perfil" />
+                    <h3>Pitucha Marx, 17</h3>
+
+                    <div className="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="18" fill="#000000"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z">
+                            </path>
+                        </svg>
+                        <h5>São Paulo - SP</h5>
+                    </div>
+
+                    <div className="hobby">
+                        <h5>Hobbies:</h5>
+                        <button>
+                            +
+                        </button>
+                    </div>
+                    <div className="actions">
+                        <div className="card-actions">
+                            <button>
+                                Cadastrar novo animal
+                            </button>
+                        </div>
+                    </div>
+                </aside>
+
+                <div className="playlist">
+                    <iframe data-testid="embed-iframe" style={{borderRadius:"12px"}}
+                        src="https://open.spotify.com/embed/playlist/3X6PXYcm9jlQ0cvW2qPFPG?utm_source=generator"
+                        width="100%" height="352" frameBorder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                                    </div>
+            </div>
+        </div>
+    )
+
+}
