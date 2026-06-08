@@ -7,7 +7,6 @@ export function Description() {
     return (
         <div className="description">
             <DescriptionItem>
-                <h3>Biografia</h3>
                 <Bio/>
             </DescriptionItem>
             <DescriptionItem>

@@ -1,4 +1,8 @@
+import { EnvelopeIcon } from "@phosphor-icons/react";
+import { Hobbies } from "./hobbies";
+
 export function Content() {
+
     return (
         <div className="primary">
             <div className="profile">
@@ -15,29 +19,28 @@ export function Content() {
                         </svg>
                         <h5>São Paulo - SP</h5>
                     </div>
-
-                    <div className="hobby">
-                        <h5>Hobbies:</h5>
-                        <button>
-                            +
-                        </button>
-                    </div>
+                    <Hobbies/>
                     <div className="actions">
                         <div className="card-actions">
-                            <button>
+
+                            <button className="cadastrar-animal">
                                 Cadastrar novo animal
+                            </button>
+
+                            <button className="enviar-mensagem" aria-label="Mensagens">
+                                <EnvelopeIcon size={32} />
                             </button>
                         </div>
                     </div>
                 </aside>
 
                 <div className="playlist">
-                    <iframe data-testid="embed-iframe" style={{borderRadius:"12px"}}
+                    <iframe data-testid="embed-iframe" style={{ borderRadius: "12px" }}
                         src="https://open.spotify.com/embed/playlist/3X6PXYcm9jlQ0cvW2qPFPG?utm_source=generator"
                         width="100%" height="352" frameBorder="0"
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy"></iframe>
-                                    </div>
+                </div>
             </div>
         </div>
     )
